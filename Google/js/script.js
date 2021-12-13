@@ -44,7 +44,7 @@ $(function () {
   var query = $.getUrlParam('q');
   if (!!query) {
     try {
-      query = decodeURIComponent(query);
+      query = Base64.decode(query);
     } catch (e) {
       console.log(e);
     }
@@ -142,7 +142,7 @@ $(function () {
           window.location.origin +
             window.location.pathname +
             '?q=' +
-            encodeURIComponent(question)
+            Base64.encode(question)
         )
         .focus()
         .select();
