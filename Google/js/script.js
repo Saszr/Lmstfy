@@ -102,7 +102,7 @@ $(function () {
 
                         stepTimeout = setTimeout(function () {
                           window.location =
-                            'https://g.dappwind.com/search?q=' +
+                            'https://www.google.com/search?q=' +
                             encodeURIComponent(query);
                         }, 1000);
                       }
